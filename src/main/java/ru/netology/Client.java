@@ -18,6 +18,7 @@ public class Client {
              BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {
 
             out.println("Client");
+            System.out.println("\nNew connection accepted");
             System.out.println(in.readLine());
 
         } catch (IOException e) {
